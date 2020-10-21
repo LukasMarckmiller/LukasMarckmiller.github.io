@@ -262,18 +262,27 @@ skills:
       title: "Software"
       icon: "monitor"
       items:
-        - label: "Windows"
+        - label: "Windows Server, Desktop"
           value: "90" #0-100 progress in %
 
-        - label: "Linux (ParrotOS, Kali)"
+        - label: "Linux (ParrotOS, Kali, Debian)"
           value: "75" #0-100 progress in %
 
         - label: "DB (MySQL, MongoDB, PostgreSQL)"
           value: "65" #0-100 progress in %
 
-        - label: "IDEAS (IntelliJ, VS, Netbeans)"
+        - label: "IDEA (IntelliJ, VS, Netbeans)"
+          value: "85" #0-100 progress in %
+
+        - label: "Nessus, Nmap"
           value: "85" #0-100 progress in %
      
+        - label: "Metasploit"
+          value: "85" #0-100 progress in %
+
+        - label: "Gobuster, Burp, ZAP"
+          value: "85" #0-100 progress in %
+
     - type: "dotted" #skills progress type - default, dotted, circles, list
       title: "Languages"
       icon: "flag"
