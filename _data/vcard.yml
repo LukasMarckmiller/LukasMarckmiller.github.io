@@ -1,0 +1,41 @@
+# Vcard configuration file
+##
+### param "bgimage" - Background Image or Background Photo
+### param "photo" - Small circle photo
+### param "name" - Your Name
+### param "typed" - Typed text under Name
+### param "social" - Social Links, icon class name you can find here https://fontawesome.com/icons?d=gallery&s=brands&m=free
+### param "buttons" - Buttons, icon class you can find here https://ionicons.com/v4/
+
+main:
+  bgimage: "assets/img/bg.jpg"
+  photo: ""
+  name: "Lukas Marckmiller"
+  typed:
+    - text: "Cyber Security Student"
+    - text: "B.Sc."
+    - text: "Master Student"
+    - text: "TU Darmstadt"
+  social:
+    # - title: "Dribbble"
+      # icon: "fab fa-dribbble"
+      # url: "https://dribbble.com/"
+    - title: "Twitter"
+      icon: "fab fa-twitter"
+      url: "https://twitter.com/LucaMarc8"
+    - title: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/LukasMarckmiller/"
+    - title: "Facebook"
+      icon: "fab fa-facebook"
+      url: "https://www.spotify.com/"
+    - title: "Xing"
+      icon: "fab fa-xing"
+      url: "https://www.xing.com/home"
+  buttons:
+    - title: "Download CV"
+      icon: ""
+      url: "https://drive.google.com/"
+    - title: "Contact Me"
+      icon: ""
+      url: "mailto:lmarckmiller@gmail.com"

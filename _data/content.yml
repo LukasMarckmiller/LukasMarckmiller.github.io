@@ -1,0 +1,329 @@
+# Sections content configuration file
+## 
+### use navigation.yml file to re-order, delete or add section of each card
+### here you can find all content in all pre-build sections
+
+### About [ about ]
+about:
+  title: "About Me"
+  text: "
+        <p>
+          <strong>Hello! I’m Lukas Marckmiller.</strong><br> Cyber Security Student from Germany, Munich. I love doing CTFs in my free time. 
+        </p>
+        "
+  list:
+    - label: "Age"
+      value: "26"
+
+    - label: "Residence"
+      value: "Germany"
+
+    #- label: "Current Job"
+    #  value: "Student"
+
+    - label: "Address"
+      value: "Munich, Germany"
+
+### Services [ services ]
+services:
+  title: "My Interests"
+  items:
+    - icon: "code"
+      text: "From SQL Injection over Cross-Site-Request-Forgery to XML External Entities"
+      name: "Web Application Security"
+      h_line: 1
+
+    - icon: "music-note"
+      name: "Music"
+      text: "Love listening to modern classic and movie soundtracks."
+      h_line: 1
+
+    - icon: "wifi"
+      name: "Network Security"
+      text: "Basics through all the layers of the OSI model."
+      h_line: 0
+
+    - icon: "key"
+      name: "Cryptography"
+      text: "From One-Way-Function to Pseudorandom-Number-Generator. From Known Plaintext to Chosen Ciphertext."
+      h_line: 0
+
+### Pricing [ pricing ]
+# pricing:
+ # title: "Pricing"
+ # items:
+   # - icon: "speedometer speed-basic"
+      # name: "Basic"
+      # price_pre: "$"
+      # price: "22"
+      # price_after: "hour"
+      # list:
+        # - text: "Web Development"
+          # disable: 0
+          # new: 0
+
+        # - text: "Advetising"
+          # disable: 0
+          # new: 0
+
+        # - text: "Game Development"
+          # disable: 0
+          # new: 0
+
+        # - text: "Music Writing"
+          # disable: 1
+          # new: 0
+
+        # - text: "Photography"
+          # disable: 1
+          # new: 1
+      # button_link: "#"
+      # button_text: "Buy Basic"
+
+    # - icon: "speedometer"
+      # name: "Pro"
+      # price_pre: "$"
+      # price: "48"
+      # price_after: "hour"
+      # list:
+        # - text: "Web Development"
+          # disable: 0
+          # new: 0
+
+        # - text: "Advetising"
+          # disable: 0
+          # new: 0
+
+        # - text: "Game Development"
+          # disable: 0
+          # new: 0
+
+        # - text: "Music Writing"
+          # disable: 0
+          # new: 0
+
+        # - text: "Photography"
+          # disable: 0
+          # new: 1
+      # button_link: "#"
+      # button_text: "Buy Pro"
+
+### Facts [ facts ]
+# facts:
+  # title: "Fun Fact"
+  # items:
+    # - icon: "disc"
+      # name: "80 Albumes Listened"
+
+    # - icon: "trophy"
+      # name: "15 Awards Won"
+
+    # - icon: "coffee"
+      # name: "1 000 Cups of coffee"
+
+    # - icon: "flag"
+      # name: "10 Countries Visited"
+
+### Clients [ clients ]
+clients:
+  title: "CTF / Training"
+  items:
+    - url: "https://tryhackme.com/p/LucaMarc"
+      image: "assets/img/clients/THMLogo.png"
+
+    - url: "https://www.hackthebox.eu/home/users/profile/91642"
+      image: "assets/img/clients/HTBLogo.png"
+
+    - url: "https://portswigger.net/web-security"
+      image: "assets/img/clients/PWSLogo.png"
+    
+    - url: "https://owasp.org/www-project-juice-shop/"
+      image: "assets/img/clients/JJSLogo.png"
+### Testimonials [ testimonials ]
+testimonials:
+  title: "Testimonials"
+  items:
+    - image: "assets/img/man1.jpg"
+      name: "Helen Floyd"
+      subname: "Art Director"
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+
+    - image: "assets/img/man1.jpg"
+      name: "Robert Chase"
+      subname: "CEO"
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+
+    - image: "assets/img/man1.jpg"
+      name: "Helen Floyd"
+      subname: "Art Director"
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+
+### Resume [ resume ]
+resume:
+  title: "Resume"
+  experience:
+    title: "Experience"
+    icon: "briefcase"
+    items:
+      - year: "2020 - Present"
+        role: "Working Student"
+        company: "Siemens AG"
+        text: "Red Teaming and Ethical Hacking for the Siemens Cyber Sec Team."
+        active: 1
+        h_line: 1
+
+      - year: "2019"
+        role: "Bachelor Thesis"
+        company: "Siemens AG"
+        text: "Remote Forensik Appliance - Forenisc Workstation based on Single-Board-Computer."
+        active: 0
+        h_line: 1
+
+      - year: "2017 - 2019"
+        role: "Working Student"
+        company: "MVI SOLVE-IT GmbH"
+        text: "IT-Security Consultant and working as Full Stack Developer."
+        active: 0
+        h_line: 0
+  education:
+    title: "Education"
+    icon: "university"
+    items:
+      - year: "2019 - Present"
+        institution: "Technical University of Darmstadt"
+        city: "Darmstadt"
+        text: "Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson, Missouri"
+        active: 1
+        h_line: 1
+
+      - year: "2015 - 2019"
+        institution: "University of Applied Sciences"
+        city: "Munich"
+        text: "Bachelor of Science in Computer Science."
+        h_line: 1
+
+      - year: "2011 - 2014"
+        institution: "DM Dokumenten Management GmbH"
+        city: "Munich"
+        text: "Trained IT specialist for application development."
+        h_line: 0
+
+### Skills [ skills ]
+skills:
+  title: "My Skills"
+  columns:
+    - type: "default" #skills progress type - default, dotted, circles, list
+      title: "Knowledge"
+      icon: "android-list"
+      items:
+        - label: "Web Application Security"
+          value: "80" #0-100 progress in %
+
+        - label: "Network Security"
+          value: "70" #0-100 progress in %
+
+        - label: "Cryptography"
+          value: "50" #0-100 progress in %
+
+        - label: "Embedded and IoT Security"
+          value: "40" #0-100 progress in %
+
+        - label: "Mobile Security"
+          value: "10" #0-100 progress in %
+
+        - label: "Physical Secruity"
+          value: "10" #0-100 progress in %
+
+        - label: "Information Security Management"
+          value: "40" #0-100 progress in %
+    - type: "circles" #skills progress type - default, dotted, circles, list
+      title: "Coding"
+      icon: "code"
+      items:
+        - label: "Java"
+          value: "90" #0-100 progress in %
+
+        - label: "C#"
+          value: "60" #0-100 progress in %
+
+        - label: "Go"
+          value: "80" #0-100 progress in %
+          
+        - label: "C, C++"
+          value: "30" #0-100 progress in %
+   
+        - label: "Python, JS"
+          value: "25" #0-100 progress in %
+        
+        - label: "Assembler"
+          value: "35" #0-100 progress in %
+          
+    - type: "list" #skills progress type - default, dotted, circles, list
+      title: "Software"
+      icon: "laptop"
+      items:
+        - label: "Windows"
+          value: "90" #0-100 progress in %
+
+        - label: "Linux (ParrotOS, Kali)"
+          value: "75" #0-100 progress in %
+
+        - label: "DB (MySQL, MongoDB, PostgreSQL)"
+          value: "65" #0-100 progress in %
+
+        - label: "IDEAS (IntelliJ, VS, Netbeans)"
+          value: "85" #0-100 progress in %
+     
+    - type: "dotted" #skills progress type - default, dotted, circles, list
+      title: "Languages"
+      icon: "flag"
+      items:
+        - label: "German"
+          value: "100" #0-100 progress in %
+
+        - label: "English"
+          value: "80" #0-100 progress in %
+### Portfolio [ portfolio ]
+portfolio:
+  title: "Recent Projects"
+  # filters:
+    # - name: "All"
+      # slug: "grid-item"
+      # active: 1
+
+    # - name: "Photo"
+      # slug: "photo"
+      # active: 0
+
+    # - name: "Video"
+      # slug: "video"
+      # active: 0
+
+    # - name: "Music"
+      # slug: "music"
+      # active: 0
+
+    # - name: "Design"
+      # slug: "design"
+      # active: 0
+
+### Blog [ blog ]
+blog:
+  title: "Latest Posts"
+
+### Contact Info List [ contacts-info ]
+contacts_info:
+  title: "Get in Touch"
+  list:
+    - label: "Address"
+      value: "Munich, Germany"
+
+    - label: "Email"
+      value: "lmarckmiller@gmail.com"
+
+    - label: "Student Email"
+      value: "lukas.marckmiller@stud.tu-darmstadt.de"
+
+### Contact Form [ contacts-form ]
+contacts_form:
+  title: "Contact Form"
