@@ -321,9 +321,6 @@ contacts_info:
     - label: "Email"
       value: "lmarckmiller@gmail.com"
 
-    - label: "Student Email"
-      value: "lukas.marckmiller@stud.tu-darmstadt.de"
-
 ### Contact Form [ contacts-form ]
 contacts_form:
   title: "Contact Form"
