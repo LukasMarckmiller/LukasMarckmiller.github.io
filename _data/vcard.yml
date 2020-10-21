@@ -28,14 +28,14 @@ main:
       url: "https://github.com/LukasMarckmiller/"
     - title: "Facebook"
       icon: "fab fa-facebook"
-      url: "https://www.spotify.com/"
+      url: "https://www.facebook.com/lukas.marckmiller
     - title: "Xing"
       icon: "fab fa-xing"
       url: "https://www.xing.com/home"
   buttons:
     - title: "Download CV"
       icon: ""
-      url: "https://drive.google.com/"
+      url: "https://1drv.ms/b/s!AnPb1lVRZNoPggNeha6LFMC1fnbS?e=AvjU4q"
     - title: "Contact Me"
       icon: ""
       url: "mailto:lmarckmiller@gmail.com"

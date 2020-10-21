@@ -3,7 +3,7 @@ title: tryhackme-onepager-writeups
 category: GitHub
 category_slug: design
 type: content
-image: assets/img/works/GitHub.png
+image: assets/img/works/github3.png
 button_url: https://github.com/LukasMarckmiller/tryhackme-onepager-writeups
 ---
 
