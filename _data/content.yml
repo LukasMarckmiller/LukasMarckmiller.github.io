@@ -192,7 +192,7 @@ resume:
       - year: "2019 - Present"
         institution: "Technical University of Darmstadt"
         city: "Darmstadt"
-        text: "Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson, Missouri"
+        text: "Doing my Master of Science in the field of cyber security, with a focus on Web App and Network Security."
         active: 1
         h_line: 1
 
@@ -262,18 +262,27 @@ skills:
       title: "Software"
       icon: "monitor"
       items:
-        - label: "Windows"
+        - label: "Windows Server, Desktop"
           value: "90" #0-100 progress in %
 
-        - label: "Linux (ParrotOS, Kali)"
+        - label: "Linux (ParrotOS, Kali, Debian)"
           value: "75" #0-100 progress in %
 
         - label: "DB (MySQL, MongoDB, PostgreSQL)"
           value: "65" #0-100 progress in %
 
-        - label: "IDEAS (IntelliJ, VS, Netbeans)"
+        - label: "IDE (IntelliJ, VS, Netbeans)"
+          value: "85" #0-100 progress in %
+
+        - label: "Nessus, Nmap"
           value: "85" #0-100 progress in %
      
+        - label: "Metasploit"
+          value: "85" #0-100 progress in %
+
+        - label: "Gobuster, Burp, ZAP"
+          value: "85" #0-100 progress in %
+
     - type: "dotted" #skills progress type - default, dotted, circles, list
       title: "Languages"
       icon: "flag"
