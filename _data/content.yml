@@ -271,7 +271,7 @@ skills:
         - label: "DB (MySQL, MongoDB, PostgreSQL)"
           value: "65" #0-100 progress in %
 
-        - label: "IDEA (IntelliJ, VS, Netbeans)"
+        - label: "IDE (IntelliJ, VS, Netbeans)"
           value: "85" #0-100 progress in %
 
         - label: "Nessus, Nmap"
