@@ -29,7 +29,7 @@ main:
   
   #works card
   - title: "works"
-    icon: "paintbrush"
+    icon: "ios-flask"
     slug: "works"
     sections:
         - portfolio

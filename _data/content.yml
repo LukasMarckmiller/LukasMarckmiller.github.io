@@ -260,7 +260,7 @@ skills:
           
     - type: "list" #skills progress type - default, dotted, circles, list
       title: "Software"
-      icon: "laptop"
+      icon: "monitor"
       items:
         - label: "Windows"
           value: "90" #0-100 progress in %
