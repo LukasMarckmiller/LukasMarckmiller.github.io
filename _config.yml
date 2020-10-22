@@ -24,7 +24,7 @@ email: "lmarckmiller@gmail.com"
 description: "CV"
 author: "Lukas Marckmiller"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://lukasmarckmiller.me" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 date_format: "%b %d, %Y"
 
 # paginations & permalinks
