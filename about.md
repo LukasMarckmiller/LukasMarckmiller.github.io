@@ -3,5 +3,4 @@ layout: page
 title: About
 ---
 
-powered by Github Pages, Jekyll
-Webmaster: lmarckmiller@gmail.com
+powered by Github Pages, Jekyll | Webmaster: lmarckmiller@gmail.com
