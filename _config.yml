@@ -37,7 +37,7 @@ disqus_comments: "yes" # yes - show disqus comments, no - hide disqus comments
 disqus_shortname: "ryancv-jekyll-theme" # read more here https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
 # formsubmit.io
-formsubmit_email: lmarckmiller@gmail" # sign up on https://formsubmit.io/ and confirm your email
+formsubmit_email: lmarckmiller@gmail.com" # sign up on https://formsubmit.io/ and confirm your email
 
 # google maps
 google_maps_api_key: "" #google maps api key
