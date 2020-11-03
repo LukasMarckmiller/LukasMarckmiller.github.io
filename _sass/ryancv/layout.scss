@@ -552,13 +552,20 @@
 	}
 	@media (max-width: 560px) {
 		height: 480px;
+
 		&:after {
 			display: none;
 		}
+		
 		.profile {
 			padding: 135px 25px 25px 25px;
+
 			&.no-photo {
 				padding-top: 250px;
+
+				.title {
+					margin-top: 0!important;
+				}
 			}
 			.slide {
 				height: 200px;
