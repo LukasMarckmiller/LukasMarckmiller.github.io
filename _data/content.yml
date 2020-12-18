@@ -128,7 +128,7 @@ services:
 clients:
   title: "CTF / Training"
   items:
-    - url: "https://tryhackme.com/p/LucaMarc"
+    - url: "https://tryhackme.com/p/L4tr0dectu5"
       image: "assets/img/clients/THMLogo.png"
 
     - url: "https://www.hackthebox.eu/home/users/profile/91642"
