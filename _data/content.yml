@@ -175,7 +175,7 @@ resume:
       - year: "2019"
         role: "Bachelor Thesis"
         company: "Siemens AG"
-        text: "Remote Forensik Appliance - Forenisc Workstation based on Single-Board-Computer."
+        text: "Remote Forensic Appliance - Forensic Workstation based on Single-Board-Computer."
         active: 0
         h_line: 1
 
