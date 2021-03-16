@@ -3,7 +3,7 @@ title: cwaid-catcher
 category: GitHub
 category_slug: design
 type: content
-image: assets/img/works/cwa.png
+image: assets/img/works/cwa2.png
 button_url: https://github.com/CWAId-Catcher-Team/cwaid-catcher
 ---
 
