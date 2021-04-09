@@ -35,7 +35,7 @@ services:
 
     - icon: "music-note"
       name: "Music"
-      text: "Love listening to modern classic and movie soundtracks."
+      text: "Love listening to modern classic, movie soundtracks and edm."
       h_line: 1
 
     - icon: "wifi"
@@ -192,7 +192,7 @@ resume:
       - year: "2019 - Present"
         institution: "Technical University of Darmstadt"
         city: "Darmstadt"
-        text: "Doing my Master of Science in the field of cyber security, with a focus on Web App and Network Security."
+        text: "Doing my Master of Science in the field of Cyber Security, with a focus on Web App and Network Security."
         active: 1
         h_line: 1
 
@@ -217,22 +217,22 @@ skills:
       icon: "android-list"
       items:
         - label: "Web Application Security"
-          value: "80" #0-100 progress in %
-
-        - label: "Network Security"
           value: "70" #0-100 progress in %
 
-        - label: "Cryptography"
-          value: "50" #0-100 progress in %
+        - label: "Network Security"
+          value: "60" #0-100 progress in %
 
-        - label: "Embedded and IoT Security"
+        - label: "Cryptography"
           value: "40" #0-100 progress in %
 
+        - label: "Embedded and IoT Security"
+          value: "30" #0-100 progress in %
+
         - label: "Mobile Security"
-          value: "10" #0-100 progress in %
+          value: "20" #0-100 progress in %
 
         - label: "Physical Secruity"
-          value: "10" #0-100 progress in %
+          value: "15" #0-100 progress in %
 
         - label: "Information Security Management"
           value: "40" #0-100 progress in %
@@ -253,7 +253,7 @@ skills:
           value: "30" #0-100 progress in %
    
         - label: "Python, JS"
-          value: "25" #0-100 progress in %
+          value: "35" #0-100 progress in %
         
         - label: "Assembler"
           value: "35" #0-100 progress in %
@@ -278,7 +278,7 @@ skills:
           value: "85" #0-100 progress in %
      
         - label: "Metasploit"
-          value: "85" #0-100 progress in %
+          value: "80" #0-100 progress in %
 
         - label: "Gobuster, Burp, ZAP"
           value: "85" #0-100 progress in %
