@@ -23,8 +23,8 @@ title: "Lukas Marckmiller"
 email: "lmarckmiller@gmail.com"
 description: "CV"
 author: "Lukas Marckmiller"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/#about-card" # the subpath of your site, e.g. /blog
+url: "https://lukasmarckmiller.me" # the base hostname & protocol for your site, e.g. http://example.com
 date_format: "%b %d, %Y"
 
 # paginations & permalinks
@@ -34,7 +34,7 @@ permalink: pretty
 
 # disqus comments
 disqus_comments: "yes" # yes - show disqus comments, no - hide disqus comments
-disqus_shortname: "ryancv-jekyll-theme" # read more here https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+disqus_shortname: "https-lukasmarckmiller-me" # read more here https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
 # formsubmit.io
 formsubmit_email: lmarckmiller@gmail.com" # sign up on https://formsubmit.io/ and confirm your email

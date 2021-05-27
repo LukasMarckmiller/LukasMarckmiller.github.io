@@ -35,11 +35,11 @@ main:
         - portfolio
   
   #blog card
-  #- title: "Blog"
-  #  icon: "chatbox-working"
-  #  slug: "blog"
-  #  sections:
-  #     - blog
+  - title: "Blog"
+    icon: "chatbox-working"
+    slug: "blog"
+    sections:
+       - blog
   
   #contact card
   - title: "Contact"
