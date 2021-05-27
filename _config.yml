@@ -33,8 +33,8 @@ paginate_path: "/page:num/"
 permalink: pretty
 
 # disqus comments
-disqus_comments: "yes" # yes - show disqus comments, no - hide disqus comments
 disqus_shortname: "https-lukasmarckmiller-me" # read more here https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+disqus_comments: "yes" # yes - show disqus comments, no - hide disqus comments
 
 # formsubmit.io
 formsubmit_email: lmarckmiller@gmail.com" # sign up on https://formsubmit.io/ and confirm your email
