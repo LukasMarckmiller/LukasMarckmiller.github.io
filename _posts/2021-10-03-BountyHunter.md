@@ -17,7 +17,7 @@ Hi! Thanks for reading my Writeup for the HTB Machine *BountyHunter*
 
 First, i started with running [autorecon](https://github.com/Tib3rius/AutoRecon) (`autorecon <ip>)`. Its a pretty nice tool for gathering information about open ports, services bound to ports and possible attack vectors.
 Taking a look on the results of  [autorecon](https://github.com/Tib3rius/AutoRecon) it reveals two open ports, SSH (**22**) and HTTP (**80**).  
-![nmap](/assets%5Cimg%5Cblog%5Cbhnmap.png)
+![nmap](/assets/img/blog/bhnmap.png)
 I manually visited the website on port 80, found a php script and started running `gobuster dir -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -u http://<ip> -x php`. It revealed following files and directories:
 |Path|Info  |
 |--|--|
