@@ -1,3 +1,13 @@
+---
+layout: post
+title:  "HackTheBox BountyHunter"
+date:   2021-10-03
+category: Writeup
+image: assets/img/blog/BountyHunter.png
+author: Lukas Marckmiller
+tags: ctf
+---
+
 # HackTheBox BountyHunter Writeup!
 
 Hi! Thanks for reading my Writeup for the HTB Machine *BountyHunter*
