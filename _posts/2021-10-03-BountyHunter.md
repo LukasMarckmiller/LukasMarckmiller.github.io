@@ -189,7 +189,7 @@ An example can be found in `/opt/skytrain_inc/invalid_tickets` e.g:
     #End Ticket  
 
 But what do we actually achive with this? 
-I ran [linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) nad found out that the current user is able to execute the script above as the root user without using a password! So that means if we can execute arbitrary code it is executed as the root user. 
+I ran [linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) and found out that the current user is able to execute the script above as the root user without using a password!
 All put together i ended up with following payload:
 
     # Skytrain Inc  
