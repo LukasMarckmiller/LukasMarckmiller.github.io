@@ -137,8 +137,8 @@ clients:
     - url: "https://portswigger.net/web-security"
       image: "assets/img/clients/PWSLogo.png"
     
-    - url: "https://owasp.org/www-project-juice-shop/"
-      image: "assets/img/clients/JJSLogo.png"
+    - url: "https://ctftime.org/team/152683"
+      image: "assets/img/clients/tu-ctf-logo"
 ### Testimonials [ testimonials ]
 testimonials:
   title: "Testimonials"
