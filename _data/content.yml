@@ -138,7 +138,7 @@ clients:
       image: "assets/img/clients/PWSLogo.png"
     
     - url: "https://ctftime.org/team/152683"
-      image: "assets/img/clients/tu-ctf-logo"
+      image: "assets/img/clients/tu-ctf-logo.png"
 ### Testimonials [ testimonials ]
 testimonials:
   title: "Testimonials"
