@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   
-  {%- include snowflakes.html -%} 
-
   {%- include head.html -%}
 
   <body class="{% if page.layout == 'home' %} home{% endif %}{% if page.layout == 'post' %} blog{% endif %}">
@@ -73,7 +71,7 @@
     </div>
 
     {%- include scripts.html -%}
-
+	{%- include snowflakes.html -%} 
   </body>
 
 </html>
