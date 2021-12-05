@@ -13,14 +13,14 @@ HackTheBox 2021 - Cyber Santa is Coming to Town  CTF
 
 This is a writeup for the **reversing** challenge from the 2021 HTB Christmas (*Cyber Santa is Coming to Town*) CTF.
 
-After unpacking the binary i ran `file giftwrap` and `binwalk giftwrap` to get a sense of what binary we are dealing with. And the binary itself.
+After unpacking the binary I ran `file giftwrap` and `binwalk giftwrap` to get a sense of what binary we are dealing with. And the binary itself.
 > ELF 64-bit LSB executable 
 ![exec](/assets/img/blog/exec.png)
 
-Loading the binary into Ghidra revealed ... well not much. It seems the binary is somehow compressed or packed. So i ran the built in string search and found two interesting candidates.
+Loading the binary into Ghidra revealed ... well not much. It seems the binary is somehow compressed or packed. So I ran the built-in string search and found two interesting candidates.
 ![upx_discv](/assets/img/blog/upx_discv.png)
-So the binary is indeed packed/compressed with [upx](https://upx.github.io/). After a quick google search i found a [tool](https://github.com/upx/upx) for decompressing the binary.  
-lets run it with:
+So the binary is indeed packed/compressed with [upx](https://upx.github.io/). After a quick google search, I found a [tool](https://github.com/upx/upx) for decompressing the binary.  
+let's run it with:
 `upx -d -v giftwrap `
 and load it into Ghidra once again.
 Now we can identify a `main` function at `0x401825` to reverse.
@@ -37,7 +37,7 @@ Compares the first _num_ bytes of the block of memory pointed by _ptr1_ to the f
 That means our *CHECK* pointer points to a block of memory.
 ```iVar2 = memcmp(&CHECK,local_11c + 1,0x17);```
 
-Following  *CHECK* we can find following memory block.
+Following  *CHECK* we can find the following memory block.
 ![secret](/assets/img/blog/secret_mem_block.png)
 Unfortunatally we can't read any data, cause before comparing the input string there is some magic happening on the user supplied input. 
 ```c
@@ -49,13 +49,13 @@ while ((uint)local_11c[0] < 0x100) {
     local_11c[0] = local_11c[0] + 1;
   }
 ```
-I was to lazy to reverse this part so i decided to ran the binary with gbd/pwndbg and check the inputs to `memcmp`.
+I was too lazy to reverse this part so I decided to run the binary with gbd/pwndbg and check the inputs to `memcmp`.
 ![enter image description here](/assets/img/blog/registers_desc.png)
-So lets keep an eye on the registers `RDI` which contains the pointer to our secret memory block and `RSI` which contains the user supplied obfuscated data. 
+So let's keep an eye on the registers `RDI` which contains the pointer to our secret memory block and `RSI` which contains the user-supplied obfuscated data. 
 
  ![registers](/assets/img/blog/check_registers.png)
  We can see that `RDI` contains the pointer `0x4cc0f0` to our memory block and it contains part of our memory data `0xac8b838688b1a7bb` that we also observed with Ghidra.
- I decided to feed the binary with different characters and stop before every call to `memcmp` to check how the input characters (in `RSI` from right to left) are changed by the obfuscation function. After running a few times a got following alphabet:
+ I decided to feed the binary with different characters and stop before every call to `memcmp` to check how the input characters (in `RSI` from right to left) are changed by the obfuscation function. After running a few times a got the following alphabet:
  
 |A|B|C|D|E|F|G|...|{|_|}|a|b|c|...|
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
