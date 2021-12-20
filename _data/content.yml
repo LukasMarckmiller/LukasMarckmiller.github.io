@@ -280,7 +280,7 @@ skills:
         - label: "Hashcat, John, Hydra"
           value: "80" #0-100 progress in %
 
-        - label: "Burp, ZAP, Gobuster, Wfuzz,"
+        - label: "Burp, ZAP, Gobuster, Wfuzz"
           value: "85" #0-100 progress in %
           
         - label: "ADB, Jadx, Frida"
