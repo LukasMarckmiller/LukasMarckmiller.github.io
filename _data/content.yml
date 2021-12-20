@@ -226,61 +226,64 @@ skills:
           value: "40" #0-100 progress in %
 
         - label: "Embedded and IoT Security"
-          value: "30" #0-100 progress in %
+          value: "35" #0-100 progress in %
 
         - label: "Mobile Security"
-          value: "20" #0-100 progress in %
+          value: "45" #0-100 progress in %
 
         - label: "Physical Secruity"
-          value: "15" #0-100 progress in %
+          value: "20" #0-100 progress in %
 
         - label: "Information Security Management"
-          value: "40" #0-100 progress in %
+          value: "30" #0-100 progress in %
     - type: "circles" #skills progress type - default, dotted, circles, list
       title: "Coding"
       icon: "code"
       items:
         - label: "Java"
-          value: "90" #0-100 progress in %
+          value: "80" #0-100 progress in %
 
         - label: "C#"
           value: "60" #0-100 progress in %
 
         - label: "Go"
-          value: "80" #0-100 progress in %
+          value: "60" #0-100 progress in %
           
         - label: "C, C++"
-          value: "30" #0-100 progress in %
+          value: "40" #0-100 progress in %
    
         - label: "Python, JS"
-          value: "35" #0-100 progress in %
+          value: "45" #0-100 progress in %
         
         - label: "Assembler"
           value: "35" #0-100 progress in %
           
     - type: "list" #skills progress type - default, dotted, circles, list
-      title: "Software"
+      title: "Toolchain"
       icon: "monitor"
       items:
-        - label: "Windows Server, Desktop"
+        - label: "Windows & Linux (ParrotOS, Kali)"
           value: "90" #0-100 progress in %
 
-        - label: "Linux (ParrotOS, Kali, Debian)"
+        - label: "MySQL, MongoDB, PostgreSQL, SQLite"
           value: "75" #0-100 progress in %
 
-        - label: "DB (MySQL, MongoDB, PostgreSQL)"
+        - label: "Nessus, Nmap, Wireshark"
           value: "65" #0-100 progress in %
 
-        - label: "IDE (IntelliJ, VS, Netbeans)"
+        - label: "Metasploit, Searchsploit"
           value: "85" #0-100 progress in %
 
-        - label: "Nessus, Nmap"
+        - label: "Gdb, Pwndbg, Ghidra"
           value: "85" #0-100 progress in %
      
-        - label: "Metasploit"
+        - label: "Hashcat, John, Hydra"
           value: "80" #0-100 progress in %
 
-        - label: "Gobuster, Burp, ZAP"
+        - label: "Burp, ZAP, Gobuster, Wfuzz,"
+          value: "85" #0-100 progress in %
+          
+        - label: "ADB, Jadx, Frida"
           value: "85" #0-100 progress in %
 
     - type: "dotted" #skills progress type - default, dotted, circles, list
