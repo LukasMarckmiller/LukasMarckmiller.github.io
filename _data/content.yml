@@ -109,17 +109,17 @@ services:
       # button_text: "Buy Pro"
 
  ###Facts [ facts ]
- facts:
-   title: "Achievements"
-   items:
-     - icon: "award"
-       name: "Top 1% TryHackMe"
+facts:
+  title: "Achievements"
+  items:
+    - icon: "award"
+      name: "Top 1% TryHackMe"
 
-     - icon: "award"
-       name: "Top 1% HackTheBox"
+    - icon: "award"
+      name: "Top 1% HackTheBox"
 
-     - icon: "trophy"
-       name: "Top 10 CyberSecurityRumble CTF"
+    - icon: "trophy"
+      name: "Top 10 CyberSecurityRumble CTF"
 
 ### Clients [ clients ]
 clients:
