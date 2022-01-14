@@ -110,16 +110,16 @@ services:
 
  ###Facts [ facts ]
  facts:
-   title: "Achievements"
-   items:
-     - icon: "award"
-       name: "Top 1% TryHackMe"
+ #  title: "Achievements"
+ #  items:
+ #    - icon: "award"
+ #      name: "Top 1% TryHackMe"
 
-     - icon: "award"
-       name: "Top 1% HackTheBox"
+#     - icon: "award"
+#       name: "Top 1% HackTheBox"
 
-     - icon: "trophy"
-       name: "Top 10 CyberSecurityRumble CTF"
+#     - icon: "trophy"
+#       name: "Top 10 CyberSecurityRumble CTF"
 
 ### Clients [ clients ]
 clients:
