@@ -14,9 +14,9 @@ main:
     sections:
         - about
         - services
-        #- pricing
         - facts
         - clients
+        #- pricing
         #- testimonials
   
   #resume card
