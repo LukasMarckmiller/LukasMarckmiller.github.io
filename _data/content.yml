@@ -119,7 +119,7 @@ facts:
       name: "Top 1% HackTheBox"
 
     - icon: "trophy"
-      name: "Top 10 CyberSecurityRumble CTF"
+      name: "Top 10 Cyber Security Rumble CTF"
 
 ### Clients [ clients ]
 clients:
