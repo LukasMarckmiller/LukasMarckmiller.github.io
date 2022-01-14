@@ -3,7 +3,7 @@ layout: post
 title:  "CyberSecurityRumble2021 FlagCheckerBaby"
 date:   2021-11-30
 category: Writeup
-image: assets/img/blog/csr.jpg
+image: assets/img/blog/csr.png
 author: Lukas Marckmiller
 tags: ctf
 ---
