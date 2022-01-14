@@ -112,10 +112,10 @@ services:
 facts:
   title: "Achievements"
   items:
-    - icon: "medal"
+    - icon: "fa-medal"
       name: "Top 1% TryHackMe"
 
-    - icon: "medal"
+    - icon: "fas fa-medal"
       name: "Top 1% HackTheBox"
 
     - icon: "trophy"
