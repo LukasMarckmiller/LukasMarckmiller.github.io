@@ -108,21 +108,18 @@ services:
       # button_link: "#"
       # button_text: "Buy Pro"
 
-### Facts [ facts ]
-# facts:
-  # title: "Fun Fact"
-  # items:
-    # - icon: "disc"
-      # name: "80 Albumes Listened"
+ ###Facts [ facts ]
+ facts:
+   title: "Achievements"
+   items:
+     - icon: "award"
+       name: "Top 1% TryHackMe"
 
-    # - icon: "trophy"
-      # name: "15 Awards Won"
+     - icon: "award"
+       name: "Top 1% HackTheBox"
 
-    # - icon: "coffee"
-      # name: "1 000 Cups of coffee"
-
-    # - icon: "flag"
-      # name: "10 Countries Visited"
+     - icon: "trophy"
+       name: "Top 10 CyberSecurityRumble CTF"
 
 ### Clients [ clients ]
 clients:
@@ -140,23 +137,23 @@ clients:
     - url: "https://ctftime.org/team/152683"
       image: "assets/img/clients/tu-ctf-logo.png"
 ### Testimonials [ testimonials ]
-testimonials:
-  title: "Testimonials"
-  items:
-    - image: "assets/img/man1.jpg"
-      name: "Helen Floyd"
-      subname: "Art Director"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+#testimonials:
+#  title: "Testimonials"
+#  items:
+#    - image: "assets/img/man1.jpg"
+#      name: "Helen Floyd"
+#      subname: "Art Director"
+#      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+#
+#    - image: "assets/img/man1.jpg"
+#      name: "Robert Chase"
+#      subname: "CEO"
+#      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
-    - image: "assets/img/man1.jpg"
-      name: "Robert Chase"
-      subname: "CEO"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-
-    - image: "assets/img/man1.jpg"
-      name: "Helen Floyd"
-      subname: "Art Director"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    #- image: "assets/img/man1.jpg"
+    #  name: "Helen Floyd"
+    #  subname: "Art Director"
+    #  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
 ### Resume [ resume ]
 resume:
@@ -217,19 +214,19 @@ skills:
       icon: "android-list"
       items:
         - label: "Web Application Security"
-          value: "70" #0-100 progress in %
+          value: "75" #0-100 progress in %
 
         - label: "Network Security"
-          value: "60" #0-100 progress in %
+          value: "65" #0-100 progress in %
 
         - label: "Cryptography"
-          value: "40" #0-100 progress in %
+          value: "45" #0-100 progress in %
 
         - label: "Embedded and IoT Security"
-          value: "35" #0-100 progress in %
+          value: "55" #0-100 progress in %
 
         - label: "Mobile Security"
-          value: "45" #0-100 progress in %
+          value: "70" #0-100 progress in %
 
         - label: "Physical Secruity"
           value: "20" #0-100 progress in %
@@ -244,19 +241,19 @@ skills:
           value: "80" #0-100 progress in %
 
         - label: "C#"
-          value: "60" #0-100 progress in %
+          value: "50" #0-100 progress in %
 
         - label: "Go"
-          value: "60" #0-100 progress in %
+          value: "50" #0-100 progress in %
           
         - label: "C, C++"
           value: "40" #0-100 progress in %
    
         - label: "Python, JS"
-          value: "45" #0-100 progress in %
+          value: "55" #0-100 progress in %
         
         - label: "Assembler"
-          value: "35" #0-100 progress in %
+          value: "45" #0-100 progress in %
           
     - type: "list" #skills progress type - default, dotted, circles, list
       title: "Toolchain"
