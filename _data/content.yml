@@ -112,7 +112,7 @@ services:
 facts:
   title: "Achievements"
   items:
-    - icon: "medal-outline"
+    - icon: "medal-sharp"
       name: "Top 1% TryHackMe"
 
     - icon: "medal-outline"
