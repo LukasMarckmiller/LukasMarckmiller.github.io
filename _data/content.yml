@@ -109,7 +109,7 @@ services:
       # button_text: "Buy Pro"
 
  ###Facts [ facts ]
- facts:
+ #facts:
  #  title: "Achievements"
  #  items:
  #    - icon: "award"

@@ -15,7 +15,7 @@ main:
         - about
         - services
         #- pricing
-        - facts
+        #- facts
         - clients
         #- testimonials
   
