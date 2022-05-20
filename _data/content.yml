@@ -162,7 +162,7 @@ resume:
     title: "Experience"
     icon: "briefcase"
     items:
-    - year: "2022 - "
+      - year: "2022 - "
         role: "Security Associate - Pentesting"
         company: "ETAS GmbH"
         text: "Automotive Penetration Testing."
