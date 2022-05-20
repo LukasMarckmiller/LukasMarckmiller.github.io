@@ -162,11 +162,18 @@ resume:
     title: "Experience"
     icon: "briefcase"
     items:
-      - year: "2020 - Present"
+    - year: "2022 - "
+        role: "Security Associate - Pentesting"
+        company: "ETAS GmbH"
+        text: "Automotive Penetration Testing."
+        active: 1
+        h_line: 1
+        
+      - year: "2020 - 2022"
         role: "Working Student"
         company: "Siemens AG"
         text: "Red Teaming and Ethical Hacking for the Siemens Cyber Sec Team."
-        active: 1
+        active: 0
         h_line: 1
 
       - year: "2019"
@@ -190,7 +197,6 @@ resume:
         institution: "Technical University of Darmstadt"
         city: "Darmstadt"
         text: "Doing my Master of Science in the field of Cyber Security, with a focus on Web App and Network Security."
-        active: 1
         h_line: 1
 
       - year: "2015 - 2019"
