@@ -193,7 +193,7 @@ resume:
     title: "Education"
     icon: "university"
     items:
-      - year: "2019 - Present"
+      - year: "2019 - 2022"
         institution: "Technical University of Darmstadt"
         city: "Darmstadt"
         text: "Doing my Master of Science in the field of Cyber Security, with a focus on Web App and Network Security."
