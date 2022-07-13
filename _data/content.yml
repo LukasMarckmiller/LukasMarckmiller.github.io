@@ -18,8 +18,8 @@ about:
     - label: "Residence"
       value: "Germany"
 
-    #- label: "Current Job"
-    #  value: "Student"
+    - label: "Current Job"
+      value: "Automotive Pentester"
 
     - label: "Address"
       value: "Munich, Germany"
@@ -237,7 +237,7 @@ skills:
         - label: "Physical Secruity"
           value: "20" #0-100 progress in %
 
-        - label: "Information Security Management"
+        - label: "Automotive Security"
           value: "30" #0-100 progress in %
     - type: "circles" #skills progress type - default, dotted, circles, list
       title: "Coding"

@@ -12,9 +12,10 @@ main:
   photo: ""
   name: "Lukas Marckmiller"
   typed:
-    - text: "Cyber Security Student"
+    - text: "Cyber Security Enthusiast"
     - text: "B.Sc."
-    - text: "Master Student"
+    - text: "Automotive Pentester"
+    - text: "OWASP MSTG Contributor"
     - text: "TU Darmstadt"
   social:
     # - title: "Dribbble"
