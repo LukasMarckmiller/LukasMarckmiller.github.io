@@ -16,7 +16,6 @@ main:
     - text: "M.Sc."
     - text: "Automotive Pentester"
     - text: "OWASP MSTG Contributor"
-    - text: "TU Darmstadt Alumnus"
   social:
     # - title: "Dribbble"
       # icon: "fab fa-dribbble"
