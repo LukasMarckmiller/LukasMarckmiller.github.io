@@ -39,8 +39,8 @@ services:
       h_line: 1
 
     - icon: "wifi"
-      name: "Network Security"
-      text: "Basics through all the layers of the OSI model."
+      name: "Mobile Security"
+      text: "Reversing and analysing Android apps with a focus on native app frameworks."
       h_line: 0
 
     - icon: "key"
