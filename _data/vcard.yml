@@ -13,10 +13,9 @@ main:
   name: "Lukas Marckmiller"
   typed:
     - text: "Cyber Security Enthusiast"
-    - text: "B.Sc."
+    - text: "M.Sc."
     - text: "Automotive Pentester"
     - text: "OWASP MSTG Contributor"
-    - text: "TU Darmstadt"
   social:
     # - title: "Dribbble"
       # icon: "fab fa-dribbble"

@@ -8,7 +8,7 @@ about:
   title: "About Me"
   text: "
         <p>
-          <strong>Hello! I’m Lukas.</strong><br>A Cyber Security Student from Germany, Munich. I love doing CTFs in my free time. 
+          <strong>Hello! I’m Lukas.</strong><br>An Automotive Pentester from Germany. I love doing CTFs in my free time. 
         </p>
         "
   list:
@@ -19,10 +19,10 @@ about:
       value: "Germany"
 
     - label: "Current Job"
-      value: "Automotive Pentester"
+      value: "Security Associate - Penetration Testing"
 
     - label: "Address"
-      value: "Munich, Germany"
+      value: "Germany"
 
 ### Services [ services ]
 services:
@@ -331,7 +331,7 @@ contacts_info:
   title: "Get in Touch"
   list:
     - label: "Address"
-      value: "Munich, Germany"
+      value: "Germany"
 
     - label: "Email"
       value: "lmarckmiller@gmail.com"
