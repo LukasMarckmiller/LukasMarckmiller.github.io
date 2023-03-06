@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "HackTheBox Walkie Hackie"
+date:   2022-03-06
+category: Writeup
+image: assets\img\blog\walkie_hackie.png
+author: Lukas Marckmiller
+tags: ctf
+---
 1.  Download Challenge files
 2.  Open files in e.g Universal Radio Hacker
 3.  Select "Show data as" and select "Hex"
