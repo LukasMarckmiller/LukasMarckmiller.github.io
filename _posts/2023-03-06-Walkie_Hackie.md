@@ -3,7 +3,7 @@ layout: post
 title:  "HackTheBox Walkie Hackie"
 date:   2022-03-06
 category: Writeup
-image: assets\img\blog\walkie_hackie.png
+image: assets/img/blog/walkie_hackie.png	
 author: Lukas Marckmiller
 tags: ctf
 ---
@@ -22,6 +22,6 @@ tags: ctf
        print(f'{i:02x}')
 ```
 7.  Use list with e.g ffuf
-    `ffuf  -w 00\_ff.lst:W1,00\_ff.lst:W2 -u http://&lt;ip&gt;:&lt;port&gt;/transmit -X POST -H  "Content-Type: application/x-www-form-urlencoded"  -d  'pa=AAAAAAAA&sw=73214693&pl=W1ffW2'  -c  -fw 403`
-8.  Filter default output with **-fw 403** (filter word), you can run it without the filter and observe the common response1
+    `ffuf  -w 00_ff.lst:W1,00_ff.lst:W2 -u http://<ip>:<port>/transmit -X POST -H  "Content-Type: application/x-www-form-urlencoded"  -d  'pa=AAAAAAAA&sw=73214693&pl=W1ffW2'  -c  -fw 403`
+8.  Filter default output with **-fw 403** (filter word), you can run it without the filter and observe the common response
 9.  You get back all the results that lead to a different response. With the flag in the response content.
