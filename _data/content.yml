@@ -43,9 +43,9 @@ services:
       text: "Reversing and analysing Android apps with a focus on native app frameworks."
       h_line: 0
 
-    - icon: "key"
-      name: "Cryptography"
-      text: "From One-Way-Function to Pseudorandom-Number-Generator. From Known Plaintext to Chosen Ciphertext."
+    - icon: "bug"
+      name: "Malware Analysis"
+      text: "Learning how to analyse and reverse malware, identify IOC's, deobfucscation and distribution techniques."
       h_line: 0
 
 ### Pricing [ pricing ]
