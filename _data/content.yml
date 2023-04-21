@@ -45,7 +45,7 @@ services:
 
     - icon: "bug"
       name: "Malware Analysis"
-      text: "Learning how to analyse and reverse malware, identify IOC's, deobfucscation and distribution techniques."
+      text: "Learning how to analyze and reverse malware, identify IOCs, deobfuscation and distribution techniques."
       h_line: 0
 
 ### Pricing [ pricing ]
