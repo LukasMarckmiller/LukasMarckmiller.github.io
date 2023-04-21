@@ -224,25 +224,25 @@ skills:
       icon: "android-list"
       items:
         - label: "Web Application Security"
-          value: "75" #0-100 progress in %
-
-        - label: "Network Security"
-          value: "65" #0-100 progress in %
-
-        - label: "Cryptography"
-          value: "45" #0-100 progress in %
-
-        - label: "Embedded and IoT Security"
-          value: "55" #0-100 progress in %
-
-        - label: "Mobile Security"
           value: "70" #0-100 progress in %
 
+        - label: "Network Security"
+          value: "60" #0-100 progress in %
+
+        - label: "Cryptography"
+          value: "50" #0-100 progress in %
+
+        - label: "Embedded and IoT Security"
+          value: "70" #0-100 progress in %
+
+        - label: "Mobile Security"
+          value: "75" #0-100 progress in %
+
         - label: "Physical Secruity"
-          value: "20" #0-100 progress in %
+          value: "35" #0-100 progress in %
 
         - label: "Automotive Security"
-          value: "30" #0-100 progress in %
+          value: "75" #0-100 progress in %
     - type: "circles" #skills progress type - default, dotted, circles, list
       title: "Coding"
       icon: "code"
