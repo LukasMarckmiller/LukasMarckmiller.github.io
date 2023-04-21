@@ -120,6 +120,10 @@ facts:
 
     - icon: "trophy"
       name: "Top 10 Cyber Security Rumble CTF"
+      
+    - icon: "file-certificate"
+      name: "Certified eJTPv2 and eMAPT"
+      
 
 ### Clients [ clients ]
 clients:
