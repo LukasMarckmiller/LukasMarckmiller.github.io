@@ -33,7 +33,7 @@ main:
       icon: "fab fa-xing"
       url: "https://www.xing.com/home"
   buttons:
-    - title: "Download CV"
+    - title: "Goto CV"
       icon: ""
       url: "https://flowcv.com/resume/jricp3imp9"
     - title: "Contact Me"
