@@ -115,7 +115,7 @@ facts:
     - icon: "star"
       name: "Top 1% HackTheBox and TryHackMe"
 
-    - icon: "star"
+    - icon: "trophy"
       name: "3rd Defcon 31 CHV CTF"
 
     - icon: "trophy"
