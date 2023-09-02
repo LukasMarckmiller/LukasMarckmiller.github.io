@@ -113,10 +113,10 @@ facts:
   title: "Achievements"
   items:
     - icon: "star"
-      name: "Top 1% TryHackMe"
+      name: "Top 1% HackTheBox and TryHackMe"
 
     - icon: "star"
-      name: "Top 1% HackTheBox"
+      name: "3rd Defcon 31 CHV CTF"
 
     - icon: "trophy"
       name: "Top 10 Cyber Security Rumble CTF"
