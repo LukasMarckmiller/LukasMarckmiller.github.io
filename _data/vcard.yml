@@ -12,7 +12,7 @@ main:
   photo: ""
   name: "Lukas Marckmiller"
   typed:
-    - text: "eJPT & eMAPT"
+    - text: "eJPT | eMAPT | eWPT"
     - text: "M.Sc."
     - text: "Automotive Pentester"
     - text: "OWASP MSTG Contributor"
