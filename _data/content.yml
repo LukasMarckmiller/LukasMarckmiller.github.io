@@ -8,12 +8,12 @@ about:
   title: "About Me"
   text: "
         <p>
-          <strong>Hello! I’m Lukas.</strong><br>An Automotive Pentester from Germany. I love doing CTFs in my free time. 
+          <strong>Hello! I’m Lukas.</strong><br>A Penetration Tester from Germany. I love doing CTFs in my free time. 
         </p>
         "
   list:
     - label: "Age"
-      value: "29"
+      value: "30"
 
     - label: "Residence"
       value: "Germany"
@@ -169,7 +169,7 @@ resume:
       - year: "2022 - "
         role: "Security Associate - Pentesting"
         company: "ETAS GmbH"
-        text: "Automotive Penetration Testing."
+        text: "Penetration Testing of deeply embedded devices, web and mobile applications, backend systems and more."
         active: 1
         h_line: 1
         
@@ -230,13 +230,13 @@ skills:
           value: "60" #0-100 progress in %
 
         - label: "Cryptography"
-          value: "50" #0-100 progress in %
+          value: "60" #0-100 progress in %
 
         - label: "Embedded and IoT Security"
           value: "70" #0-100 progress in %
 
         - label: "Mobile Security"
-          value: "75" #0-100 progress in %
+          value: "70" #0-100 progress in %
 
         - label: "Physical Secruity"
           value: "35" #0-100 progress in %
@@ -248,7 +248,7 @@ skills:
       icon: "code"
       items:
         - label: "Java"
-          value: "80" #0-100 progress in %
+          value: "60" #0-100 progress in %
 
         - label: "C#"
           value: "50" #0-100 progress in %
@@ -260,7 +260,7 @@ skills:
           value: "40" #0-100 progress in %
    
         - label: "Python, JS"
-          value: "55" #0-100 progress in %
+          value: "60" #0-100 progress in %
         
         - label: "Assembler"
           value: "45" #0-100 progress in %
